@@ -1,11 +1,11 @@
 
 import {Star } from 'lucide-react'
-function Hero({emoji,title ,text, desc ,price}) {
+function Hero({emoji,title ,text, desc ,price , style}) {
     return (
        
        
-          <div className=" flex flex-col gap-2 bg-mist-800 p-4 rounded"> 
-           <Star />
+          <div className=" flex flex-col gap-2 bg-mist-800 p-4 rounded-xl border-2" style={{ borderColor: bordercolor } }> 
+           <Star color="yellow" fill='yellow' />
          <div className="flex justify-center items-center py-6 text-5xl bg-gray-700  ">
            {emoji}
           </div>

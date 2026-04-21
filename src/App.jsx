@@ -80,24 +80,51 @@ import Hero from './layout/Hero'
 //             <p>{price}</p>
 //           </div>
 //         </div>
-const courses = [
-{ span: '🎧', title: 'Electronics',text:'Wireless Headphones' ,desc: 'Noise Cancelling', price: 'RS.4500'},
-{ span: '👟', title: 'sports',text:'Running shoes' ,desc: 'Lightweight and comfortable', price: 'RS.3200'},
-{ span: '☕', title: 'Kitchen',text:'Coffee Maker' ,desc: 'Brew 10 cups, programmable', price: 'RS.6800'},
+
+
+
+
+
+// const courses = [
+// { span: '🎧', title: 'Electronics',text:'Wireless Headphones' ,desc: 'Noise Cancelling', price: 'RS.4500', style: "yellow"},
+// { span: '👟', title: 'sports',text:'Running shoes' ,desc: 'Lightweight and comfortable', price: 'RS.3200' ,style: "blue"},
+// { span: '☕', title: 'Kitchen',text:'Coffee Maker' ,desc: 'Brew 10 cups, programmable', price: 'RS.6800' ,style: "green"},
  
- ]
+//  ]
+// components
+// function App() {
+//   return (
+//     <>
+//       <Navbar />
+//       <div className=' flex gap-4  bg-gray-900 p-4 rounded justify-center'>
+//           <Hero emoji={courses[0].span} title={courses[0].title} text={courses[0].text} desc={courses[0].desc} price={courses[0].price} bordercolor={courses[0].bordercolor} />
+//           <Hero emoji={courses[1].span} title={courses[1].title} text={courses[1].text} desc={courses[1].desc} price={courses[1].price} bordercolor={courses[1].bordercolor} />
+//           <Hero emoji={courses[2].span} title={courses[2].title} text={courses[2].text} desc={courses[2].desc} price={courses[2].price} bordercolor={courses[2].bordercolor} />
+          
+//     </div> 
+
+//   </>
+//   )
+// }
+// export default App                             
+
+
+// component , sections
+
+import Nv from "./component/Nv";
+import Footer from "./component/Footer";
+import Hero1 from "./sections/Hero1";
+import Review from "./sections/Review";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className=' flex gap-4  bg-gray-900 p-4 rounded justify-center'>
-          <Hero emoji={courses[0].span} title={courses[0].title} text={courses[0].text} desc={courses[0].desc} price={courses[0].price} />
-          <Hero emoji={courses[1].span} title={courses[1].title} text={courses[1].text} desc={courses[1].desc} price={courses[1].price} />
-          <Hero emoji={courses[2].span} title={courses[2].title} text={courses[2].text} desc={courses[2].desc} price={courses[2].price} />
-    </div> 
-
-  </>
-  )
+      <Nv />
+      <Hero1 />
+      <Review />
+      <Footer />
+    </>
+  );
 }
-export default App                             
+
+export default App;
