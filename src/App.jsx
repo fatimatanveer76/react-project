@@ -1,14 +1,16 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
 import './App.css'
+// import{BrowserRouter , Routes , Route} from 'react-router-dom'
+
 // import Card from './components/card'
 // import Nav from './components/Nav'
 // import Hero from './components/Hero'
 // import { useState } from 'react'
-import Navbar from './layout/Navbar'
-import Hero from './layout/Hero'
+// import Navbar from './layout/Navbar'
+// import Hero from './layout/Hero'
 
 // function App(){
 //   return( 
@@ -111,20 +113,138 @@ import Hero from './layout/Hero'
 
 // component , sections
 
-import Nv from "./component/Nv";
-import Footer from "./component/Footer";
-import Hero1 from "./sections/Hero1";
-import Review from "./sections/Review";
+// import Nv from "./component/Nv";
+// import Footer from "./component/Footer";
+// import Hero1 from "./sections/Hero1";
+// import Review from "./sections/Review";
 
-function App() {
+// function App() {
+//   return (
+//     <>
+//       <Nv />
+//       <Hero1 />
+//       <Review />
+//       <Footer />
+//     </>
+//   );
+// }
+
+// export default App;
+
+// import Nav1 from "./Compo/Nav1";
+// import Her1 from "./Compo/Her1";
+// import Coursecard from "./Compo/Coursecard";
+// import Footer1 from "./Compo/Footer1";
+// import Nav2 from "./Compo/Filterbar";
+
+// import Home from './pages/Home';
+
+// {/* <BrowserRouter>
+// <Routes>
+//   <Route path="/" element={<Home/>}/>
+// </Routes>
+// </BrowserRouter> */}
+
+// function App() {
+//   return (
+//     <>
+//        {/* <Home/>
+//       <Her1/>
+//       <Coursecard/>
+//       <Nav2/> 
+//       <Footer1/>  */}
+//       <BrowserRouter>
+//        <Routes>
+//           <Route path="/" element={<Home/>}/>
+//           <Route path="/about" element={<About/>}/>
+//        </Routes>
+//       </BrowserRouter>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// // Import from pages folder
+// import Home from './pages/Home';
+// import About from './pages/About';
+// import Contact from './pages/Contact';
+// // Import global components
+// import Nav1 from './components/Nav1';
+// import Footer1 from './components/Footer1';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Nav1 />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/contact" element={<Contact />} />
+//       </Routes>
+//       <Footer1 />
+//     </Router>
+//   );
+// }
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// // 1. Import your Navigation
+// import Nav1 from './Compo/Nav1'; 
+
+// // 2. Import your Pages (Make sure these names match your files in the pages folder)
+// import Home from './pages/Home';
+// import About from './pages/About';
+// import Courses from './pages/Courses';
+// import Contact from './pages/Contact';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Nav1 /> {/* Now React knows what Nav1 is! */}
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/courses" element={<Courses />} />
+//         <Route path="/contact" element={<Contact />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav1 from './componentss/Nav1';
+import Footer1 from './componentss/Footer1';
+import Home from './pages/Home';
+import Courses from './pages/Courses';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+ function App() {
   return (
-    <>
-      <Nv />
-      <Hero1 />
-      <Review />
-      <Footer />
-    </>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        {/* Navbar */}
+        <Nav1 />
+
+        {/* Main Content - Takes up remaining space */}
+        <main className="flex pt-16">
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/courses" element={<Courses/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/contact" element={<Contact/>} />
+          </Routes>
+        </main>
+
+        {/* Footer */}
+        <Footer1 />
+      </div>
+    </Router>
   );
 }
-
 export default App;
