@@ -198,7 +198,7 @@ function Nav1() {
       {/* 1. Spacer: This prevents your content from hiding under the fixed navbar */}
       <div className="h-16"></div>
 
-      <nav className="bg-gradient-to-r from-blue-600 to-purple-700 text-white shadow-xl fixed w-full top-0 z-50 backdrop-blur-md">
+      <nav className="bg-linear-to-r from-blue-600 to-purple-700 text-white shadow-xl fixed w-full top-0 z-50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             

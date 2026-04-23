@@ -118,7 +118,7 @@ function Home() {
           <div className="text-center">
             <Link 
               to="/courses"
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 bg-linear-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               View All Courses
               <ArrowRight className="w-5 h-5" />
