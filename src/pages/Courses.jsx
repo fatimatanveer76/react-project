@@ -66,8 +66,8 @@ import { coursesData, getCategories } from '../data/courses';
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-linear-to-r from-blue-600 to-purple-600 text-white pt-32 pb-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-linear-to-r from-blue-600 to-purple-600 text-white pt-32 pb-12 max-w-full">
+        <div className="max-w-full mx-auto sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">All Courses</h1>
           <p className="text-lg text-white/90">
             Browse our complete collection of {coursesData.length} premium courses
