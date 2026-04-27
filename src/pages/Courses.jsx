@@ -32,7 +32,7 @@
 
 import { useState, useMemo } from "react"; // Added useMemo here
 import { Search, Filter } from 'lucide-react';
-import Coursecard from '../componentss/Coursecard'; 
+import Coursecard from '../Component/Coursecard'; 
 import { coursesData, getCategories } from '../data/courses';
 
  function Courses() {

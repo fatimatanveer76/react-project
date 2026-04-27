@@ -217,8 +217,8 @@ import './App.css'
 // export default App;
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Nav1 from './componentss/Nav1';
-import Footer1 from './componentss/Footer1';
+import Nav1 from './Component/Nav1';
+import Footer1 from './Component/Footer1';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
 import About from './pages/About';

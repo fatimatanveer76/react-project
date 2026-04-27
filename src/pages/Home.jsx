@@ -11,7 +11,7 @@
 
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Users, Award } from 'lucide-react';
-import Coursecard from '../componentss/Coursecard';
+import Coursecard from '../Component/Coursecard';
 import { coursesData } from '../data/courses';
 
 function Home() {
